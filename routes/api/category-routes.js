@@ -39,11 +39,32 @@ try{
 }
 });
 
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
+  try{
+    // use the findByPk method to retrieve the category data using the 'id'
+  const categoryData = await Category.findByPk(req.params.id);
+  if (!categoryData) {
+    return res.status(404).json({ message: 'Category not found' });
+  }
+  await categoryData.update(req.body);
+  res.status(200).json({message: 'Category Updated'});
   // update a category by its `id` value
+} catch (err) {
+  res.status(500).json(err)
+}
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
+  try {
+    const categoryData = await Category.findByPk(req.params.id);
+    if (!categoryData){
+      return res.status(400).json({ message: 'Category not found'});
+    }
+    await categoryData.destroy();
+    res.status(200).json({message: 'Category deleted'})
+  } catch (err) {
+    request.status(400).json(err);
+  }
   // delete a category by its `id` value
 });
 
