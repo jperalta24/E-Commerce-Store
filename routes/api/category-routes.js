@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Category, Product } = require('../../models');
 
 // The `/api/categories` endpoint
+// verified through insomnia that the categories endpoint works with CRUD operations
 
 router.get('/', async (req, res) => {
   try {
