@@ -3,7 +3,7 @@
 ## Introduction
 This project is the back-end for an e-commerce website, built using the latest technologies including Express.js and Sequelize. The goal is to create a functional Express.js API that is able to connect to a MySQL database using Sequelize, and perform CRUD operations on the data.
 
-![](/Images/Screenshot%202023-02-07%20193825.jpg)
+![](/Assets/Images/Screenshot%202023-02-14%20182550.jpg)
 
 ## User Story
 As a manager at an internet retail company, I want a back-end for my e-commerce website that uses the latest technologies so that my company can compete with other e-commerce companies.
