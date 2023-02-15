@@ -24,7 +24,7 @@ MySQL
 - Test API POST, PUT, and DELETE routes to perform CRUD operations on the data
 
 ## Demonstration
-A walkthrough video demonstrating the functionality of the application can be found at [INSERT VIDEO LINK HERE]. The video shows all of the acceptance criteria being met.
+A walkthrough video demonstrating the functionality of the application can be found at [https://drive.google.com/file/d/15UVboUXSxoGxuXqrqqDDj5iAdPEWpvRZ/view]. The video shows all of the acceptance criteria being met.
 
 ## Acceptance Criteria
 The application will meet the following acceptance criteria:
